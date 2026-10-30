@@ -10,7 +10,7 @@
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0b0a09">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.steamstatic.com https://steamstatic.com; connect-src https://ac-share.duckdns.org:8443; object-src 'none'; base-uri 'none'; form-action 'none'">
-<link rel="stylesheet" href="./assets/viewer-f9629559.css">
+<link rel="stylesheet" href="./assets/viewer-31557537.css">
 </head>
 <body>
 <div class="rm-root" id="root">
@@ -144,9 +144,11 @@
 
             <div class="rm-tip" id="tip" aria-live="polite"></div>
         </div>
+    </main>
 
-        <!-- 开册覆盖层 -->
-        <div class="rm-veil" id="veil" aria-hidden="true">
+    <!-- 开册覆盖层与阅读器都在舞台外面：.rm-stage 有 container-type: size，
+         fixed 后代的包含块在按规范实现的引擎（Safari / Steam CEF）里会变成它 -->
+    <div class="rm-veil" id="veil" aria-hidden="true">
             <i class="rm-veil__rays"></i>
             <div class="rm-cover" id="cover">
                 <div class="rm-cover__book">
@@ -227,7 +229,6 @@
         </section>
 
         <div class="rm-toast" id="toast" role="status" aria-live="polite"></div>
-    </main>
 </div>
 
 <!-- 贴纸 / 邮票共用定义 -->
@@ -239,6 +240,6 @@
     </mask>
 </defs></svg>
 
-<script type="module" src="./assets/viewer-11e26703.js"></script>
+<script type="module" src="./assets/viewer-f6c1fe37.js"></script>
 </body>
 </html>
